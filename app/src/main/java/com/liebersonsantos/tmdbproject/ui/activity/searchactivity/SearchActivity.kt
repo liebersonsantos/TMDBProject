@@ -3,6 +3,7 @@ package com.liebersonsantos.tmdbproject.ui.activity.searchactivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.core.view.size
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
@@ -32,7 +33,7 @@ class SearchActivity : BaseActivity() {
         setContentView(R.layout.activity_search)
         setupToolbar(toolbarMovie, R.string.txt_search, true)
 
-        var sharedPreference = SharedPreference(this)
+        val sharedPreference = SharedPreference(this)
         sharedPreference.getData("USER")?.let {email ->
             userEmail = email
         }
@@ -65,9 +66,7 @@ class SearchActivity : BaseActivity() {
                                     )
                                 )
                             }
-                            Toast.makeText(
-                                this@SearchActivity,
-                                "Filme ${movie.originalTitle} inserido com sucesso",
+                            Toast.makeText(this@SearchActivity, "Filme ${movie.originalTitle} inserido com sucesso",
                                 Toast.LENGTH_SHORT
                             ).show()
                         },
@@ -86,9 +85,7 @@ class SearchActivity : BaseActivity() {
                                     )
                                 )
                             }
-                            Toast.makeText(
-                                this@SearchActivity,
-                                "Filme ${deleteMovie.originalTitle} deletado com sucesso",
+                            Toast.makeText(this@SearchActivity, "Filme ${deleteMovie.originalTitle} deletado com sucesso",
                                 Toast.LENGTH_SHORT
                             ).show()
                         })

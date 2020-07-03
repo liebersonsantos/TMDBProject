@@ -2,17 +2,19 @@
     <string name="app_name">TMDBProject</string>
 
     <string name="cadastro">Ainda não possui um login? Cadastre-se agora. </string>
-    <string name="cadastroNovoUsuario">Cadastro de novo usuário </string>
+    <string name="register_new_user">Cadastro de novo usuário </string>
     <string name="logar">Já possui uma conta? Entrar </string>
-    <string name="txt_perfil">MEU PERFIL </string>
+    <string name="txt_perfil">Meu perfil</string>
     <string name="btn_logout">Logout</string>
     <string name="btn_register">Cadastrar</string>
-    <string name="txt_search">PESQUISA</string>
-    <string name="txt_favorite_movies">FILMES FAVORITOS</string>
+    <string name="register">Cadastro</string>
+    <string name="txt_search">Pesquisa</string>
+    <string name="txt_favorite_movies">Filmes favoritos</string>
     <string name="empty"> </string>
     <string name="login">Entrar</string>
     <string name="password">Senha</string>
     <string name="email">Email</string>
+    <string name="phone">telefone</string>
     <string name="insert_cell_phone">Número de celular (opcional)</string>
     <string name="name">Nome</string>
 

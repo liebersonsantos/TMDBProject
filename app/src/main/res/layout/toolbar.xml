@@ -5,5 +5,5 @@
     android:id="@+id/toolbarMovie"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/actionBarSize"
-    android:background="@color/colorMoreItems"
-    app:titleTextColor="@color/colorTextToolbar" />
+    android:background="@color/colorBackground"
+    app:titleTextColor="@color/colorBackgroundIcon" />

@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/cadastroUsuario"
+        android:id="@+id/textRegisterUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
@@ -23,27 +23,26 @@
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
         android:layout_marginBottom="60dp"
-        android:text="@string/cadastroNovoUsuario"
-        android:textColor="@color/colorTitles"
-        android:textStyle="bold"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/edtNameRegister"
+        android:text="@string/register_new_user"
+        android:textColor="@color/colorTitle"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtRegisterName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/edtNameRegister"
+        android:id="@+id/edtRegisterName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/border"
         android:hint="@string/name"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -52,7 +51,7 @@
         app:layout_constraintVertical_bias="0.311" />
 
     <EditText
-        android:id="@+id/edtEmailRegister"
+        android:id="@+id/edtRegisterEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -62,14 +61,14 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtNameRegister"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisterName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtNameRegister"
-        app:layout_constraintTop_toBottomOf="@+id/edtNameRegister"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisterName"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisterName"
         app:layout_constraintVertical_bias="0.031" />
 
     <EditText
-        android:id="@+id/edtPasswordRegister"
+        android:id="@+id/edtRegisterPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -79,14 +78,14 @@
         android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtEmailRegister"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisterEmail"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtEmailRegister"
-        app:layout_constraintTop_toBottomOf="@+id/edtEmailRegister"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisterEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisterEmail"
         app:layout_constraintVertical_bias="0.038" />
 
     <EditText
-        android:id="@+id/edtPhoneRegister"
+        android:id="@+id/edtRegisterPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
@@ -95,10 +94,10 @@
         android:background="@drawable/border"
         android:hint="@string/insert_cell_phone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtPasswordRegister"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisterPassword"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtPasswordRegister"
-        app:layout_constraintTop_toBottomOf="@+id/edtPasswordRegister"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisterPassword"
         app:layout_constraintVertical_bias="0.046" />
 
     <Button
@@ -111,10 +110,10 @@
         android:textAllCaps="false"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/edtPhoneRegister"
+        app:layout_constraintEnd_toEndOf="@+id/edtRegisterPhone"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtPhoneRegister"
-        app:layout_constraintTop_toBottomOf="@+id/edtPhoneRegister"
+        app:layout_constraintStart_toStartOf="@+id/edtRegisterPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtRegisterPhone"
         app:layout_constraintVertical_bias="0.063" />
 
 

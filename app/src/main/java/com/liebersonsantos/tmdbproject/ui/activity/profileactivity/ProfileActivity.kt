@@ -27,10 +27,10 @@ class ProfileActivity : BaseActivity() {
         sharedPreference.getData("USER")?.let { email ->
             viewModel.getUserByEmail(email).observe(this, Observer { user ->
                 user?.let {
-                    txtNameProfile.text = "Nome: ${it.name}"
-                    txtEmailProfile.text = "Email: ${it.email}"
-                    txtPasswordProfile.text = "Senha: ${it.password}"
-                    txtPhoneProfile.text = "Phone: ${it.phone}"
+                    txtNameProfile.text = it.name
+                    txtEmailProfile.text = it.email
+                    txtPasswordProfile.text = it.password
+                    txtPhoneProfile.text = it.phone
                 }
             })
         }

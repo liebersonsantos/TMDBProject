@@ -23,13 +23,13 @@ class RegisterActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-        setupToolbar(toolbarMovie, R.string.empty, true)
+        setupToolbar(toolbarMovie, R.string.register, true)
         register()
     }
 
     private fun register() {
         buttonRegister.setOnClickListener {
-            when (viewModel.isValid(edtNameRegister, edtEmailRegister, edtPasswordRegister)) {
+            when (viewModel.isValid(edtRegisterName, edtRegisterEmail, edtRegisterPassword)) {
                 0 -> Toast.makeText(this@RegisterActivity, "Preencha todos os campos para se cadastrar no aplicativo", Toast.LENGTH_SHORT).show()
                 1 -> Toast.makeText(this@RegisterActivity, "Preencha o campo nome", Toast.LENGTH_SHORT).show()
                 2 -> Toast.makeText(this@RegisterActivity, "Preencha corretamente o campo email", Toast.LENGTH_SHORT).show()
@@ -38,10 +38,10 @@ class RegisterActivity : BaseActivity() {
                     GlobalScope.launch {
                         viewModel.insertUser(
                             User(
-                                edtEmailRegister.text.toString(),
-                                edtNameRegister.text.toString(),
-                                edtPasswordRegister.text.toString(),
-                                viewModel.verifyPhoneNumber(edtPhoneRegister)
+                                edtRegisterEmail.text.toString(),
+                                edtRegisterName.text.toString(),
+                                edtRegisterPassword.text.toString(),
+                                viewModel.verifyPhoneNumber(edtRegisterPhone)
                             )
                         )
                     }
