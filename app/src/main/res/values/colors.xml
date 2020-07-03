@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#E20FC8E4</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorTitles">#FFFFFF</color>
+    <color name="colorBackgroundIcon">#C2BCBC</color>
+    <color name="colorMoreItems">#E2202020</color>
+    <color name="colorTextToolbar">#2799f3</color>
+    <color name="colorDrawable">#E20FC8E4</color>
+    <color name="colorAnimation">#0F67BA</color>
+</resources>
