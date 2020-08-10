@@ -2,6 +2,7 @@ package com.liebersonsantos.tmdbproject.ui.activity.login
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -22,6 +23,7 @@ class LoginActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_login)
         setupToolbar(toolbarMovie, R.string.empty, false)
 
@@ -41,9 +43,7 @@ class LoginActivity : BaseActivity() {
                 1 -> Toast.makeText(this@LoginActivity, "Preencha o campo senha", Toast.LENGTH_SHORT).show()
                 2 -> Toast.makeText(this@LoginActivity, "Preencha corretamente o campo email", Toast.LENGTH_SHORT).show()
                 else -> {
-                    viewModel.getUserDB(
-                        edtEmailLogin.text.toString(),
-                        edtPasswordLogin.text.toString()).observe(this, Observer { user ->
+                    viewModel.getUserDB(edtEmailLogin.text.toString(), edtPasswordLogin.text.toString()).observe(this, Observer { user ->
                         user?.let { user ->
                             sharedPreference.saveData("USER", user.email)
                             startActivity(Intent(this@LoginActivity, HomeActivity::class.java))

@@ -4,6 +4,7 @@
     <color name="colorBackground">#000000</color>
     <color name="colorTitle">#FFFFFF</color>
     <color name="colorBackgroundIcon">#C2BCBC</color>
+    <color name="colorDeveloperName">#5E5C5C</color>
     <color name="colorMoreItems">#E2202020</color>
     <color name="colorTextToolbar">#2799f3</color>
     <color name="colorDrawable">#E20FC8E4</color>

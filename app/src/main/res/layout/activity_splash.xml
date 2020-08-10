@@ -7,6 +7,124 @@
     tools:context=".ui.activity.splashactivity.SplashActivity"
     android:background="@color/colorBackground">
 
+        <ImageView
+            android:id="@+id/imageOne"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/mr_jones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageTwo"
+            android:layout_width="60dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="79dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="250dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/bob_esponja"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageThree"
+            android:layout_width="70dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/rambo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageFour"
+            android:layout_width="50dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/brutus_vc_cesar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageFive"
+            android:layout_width="50dp"
+            android:layout_height="350dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/o_pequeno_orfao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageSix"
+            android:layout_width="50dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="219dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginRight="97dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/unfiglio_di_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageSeven"
+            android:layout_width="50dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="181dp"
+            android:layout_marginRight="181dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/samuraix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageEight"
+            android:layout_width="50dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="213dp"
+            android:layout_marginRight="213dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:src="@drawable/the_outpost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/developer_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorDeveloperName"
+        android:textSize="18sp"
+        app:fontFamily="cursive"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

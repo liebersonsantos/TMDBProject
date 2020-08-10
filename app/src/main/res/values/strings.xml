@@ -17,6 +17,7 @@
     <string name="phone">telefone</string>
     <string name="insert_cell_phone">Número de celular (opcional)</string>
     <string name="name">Nome</string>
+    <string name="developer_name">Lieberson Xavier dos Santos</string>
 
 
 </resources>

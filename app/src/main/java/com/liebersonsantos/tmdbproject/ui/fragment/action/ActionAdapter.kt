@@ -19,11 +19,7 @@ class ActionAdapter(val movies: List<MovieResults>,
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ActionAdapterViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_movie, parent, false)
-        return ActionAdapterViewHolder(
-            itemView,
-            favoriteClickListener,
-            deleteClickListener
-        )
+        return ActionAdapterViewHolder(itemView, favoriteClickListener, deleteClickListener)
     }
 
     override fun getItemCount() = movies.count()
